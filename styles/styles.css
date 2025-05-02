@@ -216,3 +216,43 @@ body {
       margin: 1rem 0;
     }
   }
+
+  /* Flexbox Container */
+.container {
+  display: flex; /* Use Flexbox for layout */
+  align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Space between text and image */
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Section */
+.text {
+  flex: 1; /* Take up available space */
+  padding-right: 20px; /* Add some spacing between text and image */
+}
+
+/* Image Section */
+.image {
+  flex: 1; /* Take up available space */
+  text-align: center; /* Center the image */
+}
+
+.image img {
+  max-width: 70%; /* Make image responsive */
+  height: auto;
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Heading Style */
+h1 {
+  color: #4CAF50;
+}
+
+/* Paragraph Style */
+p {
+  line-height: 1.6;
+}
