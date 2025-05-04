@@ -1,6 +1,8 @@
-/* General Styles */
+
+/*
+/*General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,50 +10,60 @@ body {
 
   }
   
+  .brand{
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+  }
+
   /* Navigation Bar */
-  nav {
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #666a96;
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
     z-index: 1000;
   }
   
+  /*
   nav .logo img {
     height: 50px;
   }
-  
-  nav .nav-links {
+  */
+
+  .navbar .nav-links {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
   }
   
-  nav .nav-links li {
+  .navbar .nav-links li {
     margin-left: 1.5rem;
   }
   
-  nav .nav-links a {
+  .navbar .nav-links a {
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
   }
   
-  nav .nav-links a:hover {
+  .navbar .nav-links a:hover {
     color: #f4c10f;
   }
   
-  .hamburger {
+  .menu-toggle {
     display: none;
-    color: #fff;
-    font-size: 1.5rem;
+    font-size: 24px;
+    background: none;
+    border: none;
     cursor: pointer;
   }
-  
+
+
   /* Hero Section */
   .hero {
     background: url('../images/hero-bg.jpg') no-repeat center center/cover;
@@ -195,32 +207,55 @@ body {
     color: #f4c10f;
   }
   
+ 
+
   /* Responsive Design */
   @media (max-width: 768px) {
-    .hamburger {
+    .menu-toggle {
       display: block;
+      color: white;
+      background: transparent;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 5px 10px;
     }
   
-    .nav-links {
-      display: none;
+    .navbar {
+      flex-wrap: wrap;
+      padding: 1rem;
+      position: relative; /* Add this for proper menu positioning */
+    }
+  
+    /* Reset desktop styles for mobile */
+    .navbar .nav-links {
+      display: none; /* Start hidden */
       flex-direction: column;
       width: 100%;
-      background-color: #333;
+      background-color: #224372;
       position: absolute;
-      top: 70px; /* Adjust based on your nav height */
+      top: 100%; /* Position below the navbar */
       left: 0;
       padding: 1rem 0;
-      z-index: 999;
+      margin: 0;
+      list-style: none;
+      z-index: 1000;
     }
   
-    .nav-links.active {
+    /* This is the key selector that shows the menu */
+    .navbar .nav-links.active {
       display: flex;
     }
   
-    .nav-links li {
-      margin: 0.5rem 0;
+    .navbar .nav-links li {
+      margin: 0;
+      padding: 0.5rem 1rem;
       text-align: center;
-      padding: 0.5rem 0;
+    }
+  
+    .navbar .nav-links a {
+      display: block;
+      padding: 0.5rem;
     }
   }
 
@@ -256,10 +291,12 @@ body {
 
 /* Heading Style */
 h1 {
-  color: #4CAF50;
+  color: #96af4c;
 }
 
 /* Paragraph Style */
 p {
   line-height: 1.6;
 }
+
+
