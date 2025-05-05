@@ -232,7 +232,8 @@ body {
     .navbar {
       flex-wrap: wrap;
       padding: 1rem;
-      position: relative; /* Add this for proper menu positioning */
+      position: sticky;
+      z-index: 1000; /* Ensure it appears above other content */
     }
   
     /* Reset desktop styles for mobile */
@@ -241,13 +242,12 @@ body {
       flex-direction: column;
       width: 100%;
       background-color: #224372;
-      position: absolute;
-      top: 100%; /* Position below the navbar */
-      left: 0;
+      position: relative;
+      top: auto;
+      left: auto;
       padding: 1rem 0;
       margin: 0;
-      list-style: none;
-      z-index: 1000;
+      list-style: none; 
     }
   
     /* This is the key selector that shows the menu */
