@@ -20,9 +20,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-
-// Temporary test
-setTimeout(() => {
-  document.querySelector('.nav-links').classList.add('active');
-  console.log('Forced menu open for testing');
-}, 3000);

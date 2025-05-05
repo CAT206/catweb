@@ -13,7 +13,8 @@ body {
   .brand{
     color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold; 
   }
 
   /* Navigation Bar */
@@ -21,11 +22,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #666a96;
+    /*background-color: #107acf; */
+    background: url('../images/hero-bg-top.jpg') no-repeat center center; /* Background image for navbar */
+    background-size: cover; /* Ensures image covers the entire navbar */
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
     z-index: 1000;
+    color: white; /* Ensure text is readable */
+    border-bottom: 0.1px white solid; /* Optional: Add a border for separation */
   }
   
   /*
@@ -72,11 +77,13 @@ body {
     justify-content: center;
     align-items: center;
     text-align:center;
-    color: #fff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
 
   }
   
   .hero-content h1 {
+    color: whitesmoke;
     font-size: 3rem;
     margin-bottom: 1rem;
   }
@@ -89,14 +96,15 @@ body {
   .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: #f4c10f;
-    color: #333;
+    background-color: rgb(57, 57, 120);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
   }
   
   .btn:hover {
-    background-color: #e0b10e;
+    background-color: rgb(96, 93, 93);
   }
   
   /* Sections */
