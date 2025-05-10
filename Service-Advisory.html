@@ -10,17 +10,7 @@
 
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="brand">Clean Air Trade, Inc.</div>
-    <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-    <ul class="nav-links">
-      <li><a href="index.html#home">Home</a></li>
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#services">Services</a></li>
-      <li><a href="index.html#projects">Projects</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <include src="components/navbar.html"></include>
 
   <!-- About Section -->
   <section id="about" class="section">
@@ -39,19 +29,9 @@
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2023 Clean Air Trade. All rights reserved.</p>
-      <!--
-      <div class="social-links">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-      -->
-    </div>
-  </footer>
+  <include src="components/footer.html"></include>
 
+  <script src="scripts/include.js"></script>
   <script src="scripts/script.js"></script>
 
   

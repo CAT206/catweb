@@ -10,17 +10,7 @@
 
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="brand">Clean Air Trade, Inc.</div>
-    <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <include src="components/navbar.html"></include>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
@@ -118,34 +108,29 @@
   <section id="contact" class="section">
     <div class="content">
       <h2>Contact Us</h2>
-      <p>Get in touch with us for inquiries or to request a consultation.</p>
-      <p>Email:  info@cleanairtrade.com</p>
-      <!--
-      <form id="contactForm">
+      <p>Get in touch with us in the form below or directly email us at 
+        <a href="mailto: info@cleanairtrade.com">info@cleanairtrade.com</a>
+      </p>
+      
+      <form id="contactForm" action="https://formspree.io/f/xwpoqjdq" method="POST">
+        <!-- Add hidden field to specify recipient -->
+        <input type="hidden" name="_replyto" value="info@cleanairtrade.com">
+
         <input type="text" id="name" placeholder="Your Name" required>
         <input type="email" id="email" placeholder="Your Email" required>
         <textarea id="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
-      -->
+      
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 Clean Air Trade. All rights reserved.</p>
-      <!--
-      <div class="social-links">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-      -->
-    </div>
-  </footer>
 
-  <script src="scripts/scripts.js"></script>
+  <!-- Footer -->
+<include src="components/footer.html"></include>
+
+<script src="scripts/include.js"></script>
+<script src="scripts/scripts.js"></script>
 
   
 </body>
