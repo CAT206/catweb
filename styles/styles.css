@@ -1,0 +1,375 @@
+
+/*
+/*General Styles */
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+
+  }
+  
+  .brand{
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: bold; 
+  }
+
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #107acf; */
+    background: url('../images/hero-bg-top.jpg') no-repeat center center; /* Background image for navbar */
+    background-size: cover; /* Ensures image covers the entire navbar */
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: white; /* Ensure text is readable */
+    border-bottom: 0.1px white solid; /* Optional: Add a border for separation */
+  }
+  
+  /*
+  nav .logo img {
+    height: 50px;
+  }
+  */
+
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar .nav-links li {
+    margin-left: 1.5rem;
+  }
+  
+  .navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #f4c10f;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  /* Hero Section */
+  .hero {
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+
+  }
+  
+  .hero-content h1 {
+    color: whitesmoke;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(57, 57, 120);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: rgb(96, 93, 93);
+  }
+  
+  /* Sections */
+  .section {
+    padding: 4rem 2rem;
+    text-align: left;
+    background-color: rgb(228, 228, 228);
+  }
+  
+  .section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .section p {
+    font-size: 1rem;
+    
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+  
+   /* Services Section - Single Column Landscape Layout */
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 1000px; /* Control overall width */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service-item {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    min-height: 200px; /* Fixed height for landscape shape */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .service-item-content {
+    flex: 1;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-item-image {
+    flex: 0 0 40%; /* Image takes 40% width */
+    min-width: 300px; /* Minimum width for image area */
+  }
+
+  .service-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Content styling */
+  .service-item i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #f4c10f;
+  }
+
+  .service-item h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-item p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .service-link {
+    color: #107acf;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto; /* Pushes link to bottom */
+    align-self: flex-start; /* Aligns link to left */
+  }
+
+  .service-link:hover {
+    text-decoration: underline;
+  }
+
+  /* projects section */
+  .item-list {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    margin: 1rem auto; /* This ensures consistent margins */
+    max-width: 800px; /* Match the paragraph width */
+  }
+
+  .item-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem; /* Additional padding for better indentation */
+  }
+
+  /* Contact Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 0.75rem 1.5rem;
+    background-color: #f4c10f;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #e0b10e;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .social-links {
+    margin-top: 1rem;
+  }
+  
+  .social-links a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .social-links a:hover {
+    color: #f4c10f;
+  }
+  
+ 
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      color: white;
+      background: transparent;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 5px 10px;
+    }
+  
+    .navbar {
+      flex-wrap: wrap;
+      padding: 1rem;
+      position: sticky;
+      z-index: 1000; /* Ensure it appears above other content */
+    }
+  
+    /* Reset desktop styles for mobile */
+    .navbar .nav-links {
+      display: none; /* Start hidden */
+      flex-direction: column;
+      width: 100%;
+      background-color: #224372;
+      position: relative;
+      top: auto;
+      left: auto;
+      padding: 1rem 0;
+      margin: 0;
+      list-style: none; 
+    }
+  
+    /* This is the key selector that shows the menu */
+    .navbar .nav-links.active {
+      display: flex;
+    }
+  
+    .navbar .nav-links li {
+      margin: 0;
+      padding: 0.5rem 1rem;
+      text-align: center;
+    }
+  
+    .navbar .nav-links a {
+      display: block;
+      padding: 0.5rem;
+    }
+    
+    .service-item {
+      flex-direction: column;
+      min-height: auto;
+    }
+    
+    .service-item-image {
+      flex: 0 0 200px;
+      min-width: 100%;
+    }
+
+  }
+
+  /* Flexbox Container */
+.container {
+  display: flex; /* Use Flexbox for layout */
+  align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Space between text and image */
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Section */
+.text {
+  flex: 1; /* Take up available space */
+  padding-right: 20px; /* Add some spacing between text and image */
+}
+
+/* Image Section */
+.image {
+  flex: 1; /* Take up available space */
+  text-align: center; /* Center the image */
+}
+
+.image img {
+  max-width: 70%; /* Make image responsive */
+  height: auto;
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Heading Style */
+h1 {
+  color: #96af4c;
+}
+
+/* Paragraph Style */
+p {
+  line-height: 1.6;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
