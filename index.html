@@ -136,15 +136,15 @@
       </p>
       <BR></br>
       <form id="contactForm" action="https://formspree.io/f/xwpoqjdq" method="POST">
-        <!-- Add hidden field to specify recipient -->
-        <input type="hidden" name="_replyto" value="info@cleanairtrade.com">
+       
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
 
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" required></textarea>
-         <BR></br>
+        <br><br>
         <button type="submit">Send Message</button>
       </form>
+
      
     </div>
   </section>
