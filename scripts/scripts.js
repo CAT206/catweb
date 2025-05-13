@@ -21,3 +21,29 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// Slideshow functionality
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+  
+  // Hide all slides
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  
+  // Move to next slide
+  slideIndex++;
+  
+  // Reset to first slide if at end
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }    
+  
+  // Show current slide
+  slides[slideIndex-1].style.display = "block";  
+  
+  // Change slide every 5 seconds
+  setTimeout(showSlides, 5000); 
+}

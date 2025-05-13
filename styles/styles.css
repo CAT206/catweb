@@ -2,7 +2,7 @@
 /*
 /*General Styles */
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Helvetica;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -117,6 +117,7 @@ body {
   .section h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    color:rgb(59, 58, 58);
     text-align: center;
   }
   
@@ -175,8 +176,9 @@ body {
 
   .service-item h3 {
     margin-top: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
+    color:rgb(59, 58, 58);
   }
 
   .service-item p {
@@ -241,10 +243,10 @@ body {
   
   /* Footer */
   footer {
-    background-color: #333;
+    background-color:rgb(57, 57, 120);
     color: #fff;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
   }
   
   .footer-content {
@@ -372,4 +374,45 @@ p {
 .content {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.content p {
+  margin-top: 0.5em;    /* Reduce top margin */
+  margin-bottom: 1em;   /* Fixed value - was "3 em" which is invalid */
+  line-height: 1.6;     /* Improve readability */
+  text-align: justify;  /* Optional: creates clean edges */
+  text-justify: inter-word;
+}
+
+/* slide show of pictures */
+.slideshow-container {
+  position: relative;
+  max-width: 800px; /* Match content width */
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.slide {
+  display: none;
+  transition: opacity 1.5s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* Fade animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
