@@ -345,6 +345,40 @@ body {
       height: 200px; /* Fixed height for images on mobile */
     }
 
+    /* 1. Prevent viewport height changes from affecting layout */
+      html {
+        height: 100%;
+        overflow-y: hidden; /* Prevent native scrolling */
+      }
+      
+      body {
+        height: 100%;
+        overflow-y: auto; /* Allow scrolling on body instead */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling */
+      }
+      
+      /* 2. Adjust section heights to account for navbar */
+      .section {
+        min-height: calc(100vh - 60px); /* Subtract navbar height */
+        padding-top: 60px; /* Space for sticky navbar */
+        margin-top: -60px; /* Counteract the padding */
+        scroll-margin-top: 60px; /* Prevent title hiding */
+      }
+      
+      /* 3. Fix for iOS viewport resize */
+      @supports (-webkit-touch-callout: none) {
+        .section {
+          min-height: -webkit-fill-available;
+        }
+      }
+      
+      /* 4. Ensure smooth scrolling to anchors */
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 60px; /* Offset for sticky header */
+      }
+
+
   }
 
   /* Flexbox Container */
