@@ -82,7 +82,7 @@ body {
 
   }
   
-  .hero-content h1 {
+  .-content h1 {
     color: whitesmoke;
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -403,6 +403,7 @@ p {
 .slideshow-container {
   position: relative;
   max-width: 800px; /* Match content width */
+  min-height: 300px; /* adjust to match image height */
   margin: 20px auto;
   overflow: hidden;
   border-radius: 8px;
@@ -412,6 +413,11 @@ p {
 .slide {
   display: none;
   transition: opacity 1.5s ease;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .slide img {
