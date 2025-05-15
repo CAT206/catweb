@@ -403,7 +403,7 @@ p {
 .slideshow-container {
   position: relative;
   max-width: 800px; /* Match content width */
-  min-height: 300px; /* adjust to match image height */
+  min-height: 450px; /* adjust to match image height */
   margin: 20px auto;
   overflow: hidden;
   border-radius: 8px;
