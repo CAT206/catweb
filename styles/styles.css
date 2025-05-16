@@ -79,10 +79,9 @@ body {
     text-align:center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: whitesmoke;
-
   }
   
-  .-content h1 {
+  .hero-content h1 {
     color: whitesmoke;
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -90,7 +89,7 @@ body {
   }
   
   .hero-content p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
   }
   
@@ -99,6 +98,7 @@ body {
     padding: 0.75rem 1.5rem;
     background-color: rgb(57, 57, 120);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
     color: white;
     text-decoration: none;
     border-radius: 5px;
